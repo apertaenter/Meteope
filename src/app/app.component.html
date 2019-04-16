@@ -1,10 +1,35 @@
-<div style="max-width:800px;padding: 1px; margin: auto">
-  <div style="width:100%;border:1px solid;margin:auto">
-    {{ title }}
-  </div>
-  <mat-grid-list cols="100" rowHeight="50px">
-    <mat-grid-tile colspan="15"><button mat-icon-button><mat-icon>keyboard_arrow_left</mat-icon></button></mat-grid-tile>
-    <mat-grid-tile colspan="70"><mat-slider min="1" max="300" step="1" value="1" style="width:95%"></mat-slider></mat-grid-tile>
-    <mat-grid-tile colspan="15"><button mat-icon-button><mat-icon>keyboard_arrow_right</mat-icon></button></mat-grid-tile>
-  </mat-grid-list>
+<div style="max-width:600px;padding: 1px; margin: auto">
+  <mat-card>
+    <div>Mete o pé!</div>
+  </mat-card>
+  <mat-card>
+    <div>18:00</div>
+  </mat-card>
+  <mat-card>
+    <mat-grid-list cols="2">
+      <mat-grid-tile>
+        <mat-radio-group style="display:flex;flex-direction:column">
+          <mat-radio-button style="margin:5px">30 horas</mat-radio-button>
+          <mat-radio-button style="margin:5px">40 horas</mat-radio-button>
+        </mat-radio-group>
+        
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-list>
+          <mat-list-item>08:32</mat-list-item>
+          <mat-list-item>11:15</mat-list-item>
+          <mat-list-item>12:01</mat-list-item>
+          <mat-list-item>16:28</mat-list-item>
+          <mat-list-item>16:47</mat-list-item>
+        </mat-list>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card>
+  <mat-card>
+    <div>
+      <button mat-icon-button><mat-icon>arrow_left</mat-icon></button>
+      <mat-slider min="0" max="300" step="1" value="1"></mat-slider>
+      <button mat-icon-button><mat-icon>arrow_right</mat-icon></button>
+    </div>
+  </mat-card>
 </div>
